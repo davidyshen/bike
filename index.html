@@ -31,6 +31,11 @@
       transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
       transform-style: preserve-3d;
     }
+    
+    audio { 
+      display:none;
+    }
+    
     .gwd-img-glrs {
       position: absolute;
       width: 600px;
@@ -49,21 +54,21 @@
       src: url('Rajdhani-Regular.ttf')  format('truetype')
     }
     /* Container holding the image and the text */
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
+    .container {
+       position: relative;
+       text-align: center;
+      color: white;
+    }
 
-/* Bottom left text */
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
+    /* Bottom left text */
+    .bottom-left {
+       position: absolute;
+       bottom: 8px;
+       left: 16px;
+    }
 
-/* Top left text */
-.top-left {
+    /* Top left text */
+   .top-left {
   position: absolute;
   top: 8px;
   left: 16px;
@@ -76,25 +81,26 @@
   right: 16px;
 }
 
-/* Bottom right text */
-.bottom-right {
+  /* Bottom right text */
+  .bottom-right {
   position: absolute;
   bottom: 8px;
   right: 16px;
-}
-
-/* Centered text */
-.centered {
+  }
+  
+  /* Centered text */
+  .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+  }
 
   </style>
 </head>
 
 <body class="htmlNoPages">
+  <audio autoplay="true" src="bike.ogg">
   <div class = "container">
   <img src="bike.gif" id='selector'/> 
   <div class = "centered">
