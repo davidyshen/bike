@@ -29,15 +29,7 @@
     }
     
     audio { 
-      display:none;
-    }
-    
-    .gwd-img-glrs {
-      position: absolute;
-      width: 600px;
-      height: 338px;
-      left: 107px;
-      top: 110px;
+      display: none;
     }
     
     #selector {
@@ -49,20 +41,20 @@
       font-family: 'Rajdhani';
       src: url('Rajdhani-Regular.ttf')  format('truetype')
     }
+    
     /* Container holding the image and the text */
     .container {
        position: relative;
        text-align: center;
       color: white;
     }
-  /* Centered text */
-  .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  }
-
+    /* Centered text */
+    .centered {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+    }
   </style>
 </head>
 
@@ -70,7 +62,7 @@
   <div class = "container">
   <img src="bike.gif" id='selector'/> 
   <div class = "centered">
-    <p style = "color:white; font-size:50px; font-family:"Rajdhani"";>
+    <p style = "color:white; font-size:50px;">
       You've been cycling the third impact for 
       <label id="minutes">00</label>
       <label id="colon">:</label>
